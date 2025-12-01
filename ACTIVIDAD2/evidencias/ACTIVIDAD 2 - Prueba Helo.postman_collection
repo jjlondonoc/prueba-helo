@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "81b31a6e-f022-4cc6-aed5-8ba3c0ea6f73",
+		"name": "ACTIVIDAD 2 - Prueba Helo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37003903"
+	},
+	"item": [
+		{
+			"name": "Prueba 1 - Bienvenido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1212",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1010101010",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.helo.v1.intelmotics.com/services/prueba_tecnica/hola.php",
+					"protocol": "https",
+					"host": [
+						"api",
+						"helo",
+						"v1",
+						"intelmotics",
+						"com"
+					],
+					"path": [
+						"services",
+						"prueba_tecnica",
+						"hola.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 2 - Campos no enviados correctamente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idd",
+							"value": "1212",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "1010101010",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.helo.v1.intelmotics.com/services/prueba_tecnica/hola.php",
+					"protocol": "https",
+					"host": [
+						"api",
+						"helo",
+						"v1",
+						"intelmotics",
+						"com"
+					],
+					"path": [
+						"services",
+						"prueba_tecnica",
+						"hola.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 3 - Id o token incorrectos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1211",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "10101010",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.helo.v1.intelmotics.com/services/prueba_tecnica/hola.php",
+					"protocol": "https",
+					"host": [
+						"api",
+						"helo",
+						"v1",
+						"intelmotics",
+						"com"
+					],
+					"path": [
+						"services",
+						"prueba_tecnica",
+						"hola.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
